@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MedcineNet | booking</title>
+    <style>
+      td,
+      th {
+        border: 1px rgb(78, 78, 78) solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="z-10 absolute w-full h-[82px] bg-gradient-to-r from-sky-500 to-indigo-700 text-gray-300 flex items-center justify-between px-6"
+    >
+      <a href="index.html" class="text-4xl">MedicineNet</a>
+      <nav>
+        <ul class="flex items-center justify-between text-lg">
+          <li>
+            <a href="#" class="mr-4 px-4 py-2 rounded">welcome</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 px-4 py-2 rounded">our services</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 px-4 py-2 rounded">about us</a>
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 rounded">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="bg-gradient-to-r from-grey-500 to-grey-300 min-h-screen w-screen"
+    >
+      <div
+        class="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10/12"
+      >
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full">
+                <thead class="border-b">
+                  <tr>
+                    <th scope="col" class="th">topic</th>
+                    <th scope="col" class="th">date of appointment</th>
+                    <th scope="col" class="th">start time of appointment</th>
+                    <th scope="col" class="th">end time of appointment</th>
+                    <th scope="col" class="th">action</th>
+                    <th scope="col" class="th">action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b">
+                    <td class="td">dent</td>
+                    <td class="td">5/4/2022</td>
+                    <td class="td">12:30 AM</td>
+                    <td class="td">1:30 PM</td>
+                    <td class="td">
+                      <input
+                        type="button"
+                        value="edit"
+                        class="bg-yellow-500 text-base py-3 px-8 mx-auto block cursor-pointer rounded hover:bg-yellow-600 transition-all duration-100"
+                      />
+                    </td>
+                    <td class="td">
+                      <input
+                        type="button"
+                        value="delete"
+                        class="bg-red-600 text-base py-3 px-8 mx-auto block cursor-pointer rounded hover:bg-red-700 transition-all duration-100"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <input
+          type="button"
+          value="add appointment"
+          class="bg-sky-600 py-3 px-8 mx-auto mt-5 block cursor-pointer rounded hover:bg-sky-700 transition-all duration-100"
+        />
+      </div>
+    </main>
+  </body>
+</html>
